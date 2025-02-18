@@ -4,8 +4,6 @@ ENV APP_PROFILE="default"
 
 COPY [ "scripts/entrypoint.sh", "/entrypoint.sh" ]
 
-WORKDIR /usr/src/simplecrud-spring
-
 RUN apt update -y
 RUN apt install -y git
 RUN git clone https://github.com/mentoria-openshift/simplecrud-spring /opt/simplecrud
